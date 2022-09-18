@@ -6,7 +6,7 @@ import Saved from './Saved'
 import Profile from './Profile'
 import BottomNavigation from '../components/BottomNavigation'
 
-export default function MainScreen () {
+export default function MainScreen ({ navigation }) {
   const Stack = createNativeStackNavigator()
   return (
     <>
@@ -16,7 +16,7 @@ export default function MainScreen () {
         <Stack.Screen name="Bookings" component={Bookings} options={{ headerShown: false }} />
         <Stack.Screen name="Profile" component={Profile} options={{ headerShown: false }} />
       </Stack.Navigator>
-      <BottomNavigation />
+      <BottomNavigation navigation={navigation} />
     </>
   )
 }

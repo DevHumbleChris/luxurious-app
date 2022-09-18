@@ -1,29 +1,34 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
-import tw from 'twrnc'
-import { Icon } from '@rneui/themed'
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import React from "react";
+import tw from "twrnc";
+import { Icon } from "@rneui/themed";
+import { useDispatch, useSelector } from "react-redux";
+import { setActiveNav } from "../store/slices/bottomNav";
 
-export default function BottomNavigation() {
+export default function BottomNavigation({ navigation }) {
+  const navOptions = useSelector((state) => state.bottomNav.navs);
+  const dispatch = useDispatch()
+  const setActiveBottomNav = (nav) => {
+    dispatch(setActiveNav(nav))
+    navigation.navigate(nav.screen)
+  }
   return (
-    <View style={tw`mt-auto bottom-3 mx-3 p-2 bg-white mb-2 rounded-xl flex-row justify-evenly`}>
-      <TouchableOpacity>
-        <Icon name="home" type="material-community" size={35} color="#673ab7" />
-        <Text style={tw`text-gray-600`}>Home</Text>
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Icon name="cards-heart-outline" type="material-community" size={35} color="#673ab7" />
-        <Text style={tw`text-gray-600`}>Saved</Text>
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Icon name="book" type="material-community" size={35} color="#673ab7" />
-        <Text style={tw`text-gray-600`}>Bookings</Text>
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Icon name="account" type="material-community" size={35} color="#673ab7" />
-        <Text style={tw`text-gray-600`}>Profile</Text>
-      </TouchableOpacity>
+    <View
+      style={tw`mt-auto bottom-3 mx-3 p-2 bg-white mb-2 rounded-xl flex-row justify-evenly`}
+    >
+      {navOptions.map((nav, i) => (
+        <TouchableOpacity key={i} onPress={() => setActiveBottomNav(nav)}>
+          <Icon
+            name={nav.iconName}
+            type="material-community"
+            size={nav.isActive ? 35 : 45}
+            color={nav.isActive ? nav.activeColor : nav.inActiveColor}
+          />
+          {nav.isActive && <Text style={tw`text-gray-600`}>{nav.name}</Text>}
+        </TouchableOpacity>
+      ))}
     </View>
-  )
+  );
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import sampleSlice from "./slices/sample";
+import bottomNavSlice from "./slices/bottomNav";
 
 export const store = configureStore({
     reducer: {
-        sample: sampleSlice
+        bottomNav: bottomNavSlice
     }
 })
