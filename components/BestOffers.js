@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import { Icon } from '@rneui/themed'
 import tw from 'twrnc'
@@ -11,8 +11,8 @@ const BestOffers = () => {
           <Text style={tw`text-[#673ab7] text-lg underline`}>View All</Text>
         </View>
         {/* Apartments */}
-        <View style={tw`my-2 flex-row`}>
-          <View style={tw`w-60 bg-white rounded-2xl shadow p-1 mr-3`}>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={tw`my-2 flex-row`}>
+          <View style={tw`w-60 bg-white rounded-2xl shadow p-1 mr-3 my-2`}>
             <Image
               style={{
                 height: 200,
@@ -71,7 +71,7 @@ const BestOffers = () => {
               </View>
             </View>
           </View>
-          <View style={tw`w-60 bg-white rounded-2xl shadow p-1 mr-3`}>
+          <View style={tw`w-60 bg-white rounded-2xl shadow p-1 mr-3 my-2`}>
             <Image
               style={{
                 height: 200,
@@ -130,7 +130,7 @@ const BestOffers = () => {
               </View>
             </View>
           </View>
-        </View>
+        </ScrollView>
         
         {/* End of Apartments */}
       </View>

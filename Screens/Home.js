@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   View,
   Image,
+  ScrollView,
 } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -13,6 +14,7 @@ import { Avatar, Icon } from "@rneui/themed";
 import BestOffers from "../components/BestOffers";
 import Categories from "../components/Categories";
 import SearchBox from "../components/SearchBox";
+import NearestYou from "../components/NearestYou";
 
 const Home = () => {
   return (
@@ -32,7 +34,10 @@ const Home = () => {
       </View>
       <SearchBox />
       <Categories />
-      <BestOffers />
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <BestOffers />
+        <NearestYou />
+      </ScrollView>
     </SafeAreaView>
   );
 };
