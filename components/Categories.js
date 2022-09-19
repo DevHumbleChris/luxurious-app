@@ -19,7 +19,7 @@ const Categories = () => {
           {categories.map(category => (
 
           <TouchableOpacity
-            style={tw`flex-row items-center ${selectedCategory === category.name && 'border-2 border-dashed border-[#673ab7]'} rounded-xl p-1`}
+            style={tw`flex-row items-center ${selectedCategory === category.name ? 'border-2 border-dashed border-[#673ab7]': ''} rounded-xl p-1`}
             key={category.name}
             onPress={() => setCategorySelected(category)}
           >
