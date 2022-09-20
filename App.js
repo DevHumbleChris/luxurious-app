@@ -5,6 +5,7 @@ import React from "react";
 import MainScreen from "./Screens/MainScreen";
 import { store } from "./store";
 import { Provider } from "react-redux";
+import OnboardingScreen from "./Screens/OnboardingScreen";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -18,6 +19,9 @@ export default function App() {
               component={MainScreen}
               options={{ headerShown: false }}
             />
+            <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} options={{
+              headerShown: false
+            }} />
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>
