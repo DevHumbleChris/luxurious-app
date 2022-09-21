@@ -5,6 +5,7 @@ import {
   Dimensions,
   StyleSheet,
   FlatList,
+  TouchableOpacity,
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -39,13 +40,20 @@ const onboardingData = [
   },
 ];
 
-const screen = Dimensions.get("window")
+const screen = Dimensions.get("window");
 
 const Onboarding = () => {
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const updateCurrentSlide = (e) => {
+    const contentOffsetX = e.nativeEvent.contentOffset.x
+    const currentIndex = Math.round(contentOffsetX / screen.width)
+    setCurrentSlideIndex(currentIndex)
+  }
   return (
     <View style={tw`flex-1 bg-[#673ab7]`}>
       <FlatList
         data={onboardingData}
+        onMomentumScrollEnd={(e) => updateCurrentSlide(e)}
         pagingEnabled
         showsHorizontalScrollIndicator={false}
         horizontal
@@ -54,9 +62,21 @@ const Onboarding = () => {
         }}
         renderItem={({ item }) => <Slide item={item} />}
       />
-      <View style={tw`flex-row justify-center my-12`}>
-        <View style={tw`bg-white h-2 w-7 rounded-full mr-1`}></View>
-        <View style={tw`bg-white h-2 w-3 rounded-full`}></View>
+      <View style={tw`flex-row justify-between items-center mx-6`}>
+        <View style={tw`flex-row justify-center my-12`}>
+          {/* <View style={tw`bg-white  rounded-full mr-1`}></View> */}
+          {onboardingData.map((_, index) => (
+            <View
+              key={index}
+              style={tw`bg-white ${
+                currentSlideIndex === index ? "h-2 w-7" : "h-2 w-2"
+              } rounded-full mr-1`}
+            ></View>
+          ))}
+        </View>
+        <TouchableOpacity style={tw`bg-transparent border-2 border-white p-3 rounded-xl`}>
+          <Text style={tw`text-white`}>Get Started</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
