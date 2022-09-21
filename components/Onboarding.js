@@ -34,7 +34,7 @@ const onboardingData = [
     id: 3,
     title: "Offices",
     description:
-      "Discover the best Apartments around your location, at an affordable prices.",
+      "Explore our range of commercial office space available for lease in the region at an affordable prices.",
     image:
       "https://images.unsplash.com/photo-1570126688035-1e6adbd61053?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG9mZmljZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
   },
