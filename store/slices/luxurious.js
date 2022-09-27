@@ -13,15 +13,13 @@ const Apartments = [
     price: "KSh 110,000",
     amenities: ["2 Bedrooms", "2 Bathrooms", "2 Toilets", "1 Parking Space"],
     duration: "per month",
+    type: 'Apartments'
   },
   {
     name: "Demidoff Milano",
     phoneNumber: "0703846197",
     location: "Nyali, Mombasa",
-    description: `Executively furnished 4 bedroom apartment WITH SEA VIEW in Nyali offered for rent
-      4 bedrooms all en-suite + 1 room SQ with separate entrance + study room + big laundry area.
-      Apartment is approximately 4,000 square feet in area with an open plan design, glass sliding doors and balustrades, providing a lot of light and cross ventilation with a lot of privacy.
-      The apartments are built on 2 acres of Land near sandy beach of Indian Ocean.`,
+    description: `Executively furnished 4 bedroom apartment WITH SEA VIEW in Nyali offered for rent 4 bedrooms all en-suite + 1 room SQ with separate entrance + study room + big laundry area. Apartment is approximately 4,000 square feet in area with an open plan design, glass sliding doors and balustrades, providing a lot of light and cross ventilation with a lot of privacy. The apartments are built on 2 acres of Land near sandy beach of Indian Ocean.`,
     starRating: 4.5,
     image:
       "https://images.kenyapropertycentre.com/properties/images/thumbs/17869/06304da6884803-4br-furnished-execuitive-seaview-apartment-in-nyali-for-rent-nyali-mombasa.jpg",
@@ -37,6 +35,7 @@ const Apartments = [
       "2 Parking Space",
     ],
     duration: "per month",
+    type: 'Apartments'
   },
   {
     name: "La Molina Aparthotels",
@@ -57,6 +56,7 @@ const Apartments = [
       "Swimming Pool",
     ],
     duration: "per month",
+    type: 'Apartments'
   },
   {
     name: "Milano Apartments",
@@ -80,6 +80,7 @@ const Apartments = [
       "Gym",
     ],
     duration: "per month",
+    type: 'Apartments'
   },
   {
     name: "Milano Apartments",
@@ -103,6 +104,7 @@ const Apartments = [
       "Gym",
     ],
     duration: "per month",
+    type: 'Apartments'
   },
   {
     name: "Milano Apartments",
@@ -123,9 +125,9 @@ const Apartments = [
       "Swimming Pool",
       "CCTV Camera",
       "WiFi",
-      "Gym",
     ],
     duration: "per month",
+    type: 'Apartments'
   },
   {
     name: "Milano Apartments",
@@ -149,6 +151,7 @@ const Apartments = [
       "Gym",
     ],
     duration: "per month",
+    type: 'Apartments'
   },
 ];
 
