@@ -4,8 +4,11 @@ import { Icon } from '@rneui/themed'
 import tw from 'twrnc'
 import { useSelector } from 'react-redux'
 
-const BestOffers = () => {
+const BestOffers = ( { navigation }) => {
   const { apartments } = useSelector(state => state.luxurious)
+  const reviewItem = (item) => {
+    navigation.navigate('ReviewScreen', item)
+  }
   return (
     <View style={tw`my-4`}>
         <View style={tw`flex-row justify-between`}>
@@ -16,6 +19,7 @@ const BestOffers = () => {
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={tw`my-2 flex-row`}>
           {apartments.map((item, i) => (
             <View key={i} style={tw`w-60 bg-white rounded-2xl shadow p-1 mr-3 my-2`}>
+              <TouchableOpacity onPress={() => reviewItem(item)}>
               <Image
                 style={{
                   height: 200,
@@ -27,6 +31,7 @@ const BestOffers = () => {
                   uri: item.image,
                 }}
               />
+              </TouchableOpacity>
               <View
                 style={tw`flex-row justify-between items-center absolute top-3 left-2`}
               >
@@ -38,6 +43,7 @@ const BestOffers = () => {
               </View>
               <TouchableOpacity
                 style={tw`flex-row justify-between items-center absolute top-3 right-3`}
+                onPress={() => console.log('Hello From heart')}
               >
                 <Icon
                   name="cards-heart-outline"
@@ -46,6 +52,8 @@ const BestOffers = () => {
                   color="#673ab7"
                 />
               </TouchableOpacity>
+              <TouchableOpacity onPress={() => reviewItem(item)}>
+
               <View style={tw`p-2`}>
                 <Text style={tw`text-lg my-1`}>{item.name}</Text>
                 <View style={tw`flex-row justify-between`}>
@@ -73,6 +81,7 @@ const BestOffers = () => {
                   <Text style={tw`text-xs text-gray-500`}>/{item.duration}</Text>
                 </View>
               </View>
+              </TouchableOpacity>
             </View>
           ))}
         </ScrollView>

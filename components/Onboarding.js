@@ -42,7 +42,7 @@ const onboardingData = [
 
 const screen = Dimensions.get("window");
 
-const Onboarding = () => {
+const Onboarding = ({ navigation }) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const updateCurrentSlide = (e) => {
     const contentOffsetX = e.nativeEvent.contentOffset.x
@@ -74,7 +74,7 @@ const Onboarding = () => {
             ></View>
           ))}
         </View>
-        <TouchableOpacity style={tw`bg-transparent border-2 border-white p-3 rounded-xl`}>
+        <TouchableOpacity style={tw`bg-transparent border-2 border-white p-3 rounded-xl`} onPress={() => navigation.replace('MainScreen')}>
           <Text style={tw`text-white`}>Get Started</Text>
         </TouchableOpacity>
       </View>

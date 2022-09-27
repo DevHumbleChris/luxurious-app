@@ -16,7 +16,7 @@ import Categories from "../components/Categories";
 import SearchBox from "../components/SearchBox";
 import NearestYou from "../components/NearestYou";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
     <SafeAreaView style={tw`flex-1 p-5`}>
       <View style={tw`flex-row justify-between`}>
@@ -35,7 +35,7 @@ const Home = () => {
       <SearchBox />
       <Categories />
       <ScrollView showsVerticalScrollIndicator={false}>
-        <BestOffers />
+        <BestOffers navigation={navigation} />
         <NearestYou />
       </ScrollView>
     </SafeAreaView>
