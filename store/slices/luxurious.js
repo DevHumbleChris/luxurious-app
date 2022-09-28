@@ -11,7 +11,27 @@ const Apartments = [
     image:
       "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXBhcnRtZW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     price: "KSh 110,000",
-    amenities: ["2 Bedrooms", "2 Bathrooms", "2 Toilets", "1 Parking Space"],
+    amenities: [
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '2 Bedrooms'
+    },
+    {
+      iconName: 'bed',
+      iconType: 'material-community',
+      title: '2 Bathrooms'
+  },
+  {
+    iconName: 'bed',
+    iconType: 'material-community',
+    title: '2 Toilets'
+},
+{
+  iconName: 'bed',
+  iconType: 'material-community',
+  title: '1 Parking Space'
+}],
     duration: "per month",
     type: 'Apartments'
   },
@@ -25,14 +45,46 @@ const Apartments = [
       "https://images.kenyapropertycentre.com/properties/images/thumbs/17869/06304da6884803-4br-furnished-execuitive-seaview-apartment-in-nyali-for-rent-nyali-mombasa.jpg",
     price: "KSh 230,000",
     amenities: [
-      "4 Bedrooms",
-      "4 Bathrooms",
-      "4 Toilets",
-      "Swimming Pool",
-      "Kitchen Utility",
-      "WiFi",
-      "Security",
-      "2 Parking Space",
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '4 Bedrooms'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '4 Bathrooms'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '4 Toilets'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Swimming Pool'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Kitchen Utility'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'WiFi'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '24/7 Security'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '2 Parking Space'
+      }
     ],
     duration: "per month",
     type: 'Apartments'
@@ -48,12 +100,36 @@ const Apartments = [
       "https://images.kenyapropertycentre.com/properties/images/thumbs/18185/063131b05b4ccd-3-br-beach-apartment-in-nyali-ar134-for-rent-nyali-mombasa.jpeg",
     price: "KSh 130,000",
     amenities: [
-      "3 Bedrooms",
-      "3 Bathrooms",
-      "3 Toilets",
-      "1 Parking Space",
-      "Gym",
-      "Swimming Pool",
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '3 Bedrooms'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '3 Bathrooms'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '3 Toilets'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Parking Space'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Gym'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Swimming Pool'
+      }
     ],
     duration: "per month",
     type: 'Apartments'
@@ -69,15 +145,36 @@ const Apartments = [
       "https://images.kenyapropertycentre.com/properties/images/thumbs/18505/0632824d85c06b-elsie-ridge-for-rent-westlands-nairobi.jpeg",
     price: "KSh 245,000",
     amenities: [
-      "1 Bedrooms",
-      "1 Bathrooms",
-      "1 Toilets",
-      "1 Parking Space",
-      "Gym",
-      "Swimming Pool",
-      "CCTV Camera",
-      "WiFi",
-      "Gym",
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '3 Bedrooms'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '3 Bathrooms'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '3 Toilets'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Parking Space'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Gym'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Swimming Pool'
+      }
     ],
     duration: "per month",
     type: 'Apartments'
@@ -93,15 +190,51 @@ const Apartments = [
       "https://images.unsplash.com/photo-1551361415-69c87624334f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YXBhcnRtZW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     price: "KSh 200,000",
     amenities: [
-      "1 Bedrooms",
-      "1 Bathrooms",
-      "1 Toilets",
-      "1 Parking Space",
-      "Gym",
-      "Swimming Pool",
-      "CCTV Camera",
-      "WiFi",
-      "Gym",
+      {
+        name: 'bed',
+        type: 'material-community',
+        amenity: '1 Bedrooms'
+      },
+      {
+        name: 'bed',
+        type: 'material-community',
+        amenity: '1 Bathrooms'
+      },
+      {
+        name: 'bed',
+        type: 'material-community',
+        amenity: '1 Toilets'
+      },
+      {
+        name: 'bed',
+        type: 'material-community',
+        amenity: '1 Parking Space'
+      },
+      {
+        name: 'bed',
+        type: 'material-community',
+        amenity: 'Gym'
+      },
+      {
+        name: 'bed',
+        type: 'material-community',
+        amenity: 'Swimming Pool'
+      },
+      {
+        name: 'bed',
+        type: 'material-community',
+        amenity: 'CCTV Camera'
+      },
+      {
+        name: 'bed',
+        type: 'material-community',
+        amenity: 'WiFi'
+      },
+      {
+        name: 'bed',
+        type: 'material-community',
+        amenity: 'WiFi'
+      }
     ],
     duration: "per month",
     type: 'Apartments'
@@ -117,14 +250,46 @@ const Apartments = [
       "https://images.unsplash.com/photo-1605283176476-63150675f4a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFwYXJ0bWVudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     price: "KSh 140,000",
     amenities: [
-      "1 Bedrooms",
-      "1 Bathrooms",
-      "1 Toilets",
-      "1 Parking Space",
-      "Gym",
-      "Swimming Pool",
-      "CCTV Camera",
-      "WiFi",
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Bedrooms'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Bathrooms'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Toilets'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Parking Space'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Gym'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Swimming Pool'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'CCTV Camera'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'WiFi'
+      }
     ],
     duration: "per month",
     type: 'Apartments'
@@ -140,15 +305,46 @@ const Apartments = [
       "https://images.unsplash.com/photo-1638973140785-3b918e290682?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFwYXJ0bWVudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     price: "KSh 250,000",
     amenities: [
-      "1 Bedrooms",
-      "1 Bathrooms",
-      "1 Toilets",
-      "1 Parking Space",
-      "Gym",
-      "Swimming Pool",
-      "CCTV Camera",
-      "WiFi",
-      "Gym",
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Bedrooms'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Toilets'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Bathrooms'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Parking Space'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Gym'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Swimming Pool'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'CCTV Camera'
+      },
+      {
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'WiFi'
+      }
     ],
     duration: "per month",
     type: 'Apartments'

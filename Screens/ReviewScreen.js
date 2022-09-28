@@ -86,8 +86,8 @@ const ReviewScreen = ({ navigation, route: { params } }) => {
               {params.amenities.map((amenity, i) => {
                 return (
                   <View key={i} style={tw`my-2 items-center mr-3`}>
-                    <Icon name={getAmenityName(amenity)} type='font-awesome-5' size={35} color='#673ab7' />
-                    <Text>{amenity}</Text>
+                    <Icon name={amenity.iconName} type={amenity.iconType} size={35} color='#673ab7' />
+                    <Text>{amenity.title}</Text>
                   </View>
                 )
               })}
