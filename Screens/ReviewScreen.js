@@ -5,7 +5,6 @@ import { Avatar, Icon } from "@rneui/base";
 import { useSelector } from "react-redux";
 
 const ReviewScreen = ({ navigation, route: { params } }) => {
-  console.log(params.amenities)
   return (
     <View style={tw`flex-1`}>
       <View style={tw`h-98`}>
@@ -60,14 +59,14 @@ const ReviewScreen = ({ navigation, route: { params } }) => {
             <View style={tw`flex-row flex-wrap`}>
               {params.amenities.map((amenity, i) => {
                 return (
-                  <View key={i} style={tw`my-2 items-center mr-3`}>
+                  <View key={i} style={tw`my-2 items-center mr-3 my-2`}>
                     <Icon
                       name={amenity.iconName}
                       type={amenity.iconType}
-                      size={35}
+                      size={30}
                       color="#673ab7"
                     />
-                    <Text>{amenity.title}</Text>
+                    <Text style={tw`text-gray-600`}>{amenity.title}</Text>
                   </View>
                 );
               })}

@@ -57,7 +57,7 @@ const BestOffers = ( { navigation }) => {
               <View style={tw`p-2`}>
                 <Text style={tw`text-lg my-1`}>{item.name}</Text>
                 <View style={tw`flex-row justify-between`}>
-                  <View style={tw`flex-row items-center`}>
+                  <View style={tw`-mx-1 flex-row items-center`}>
                     <Icon
                       name="map-marker"
                       type="material-community"
@@ -70,7 +70,7 @@ const BestOffers = ( { navigation }) => {
                     <Icon
                       name="star"
                       type="material-community"
-                      color="yellow"
+                      color="#673ab7"
                       size={25}
                     />
                     <Text>{item.starRating}</Text>

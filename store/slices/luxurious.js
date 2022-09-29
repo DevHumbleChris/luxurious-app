@@ -23,13 +23,13 @@ const Apartments = [
       title: '2 Bathrooms'
   },
   {
-    iconName: 'bed',
-    iconType: 'material-community',
+    iconName: 'toilet',
+    iconType: 'font-awesome-5',
     title: '2 Toilets'
 },
 {
-  iconName: 'bed',
-  iconType: 'material-community',
+  iconName: 'car',
+  iconType: 'font-awesome-5',
   title: '1 Parking Space'
 }],
     duration: "per month",
@@ -56,33 +56,33 @@ const Apartments = [
         title: '4 Bathrooms'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'toilet',
+    iconType: 'font-awesome-5',
         title: '4 Toilets'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'swimming-pool',
+        iconType: 'font-awesome-5',
         title: 'Swimming Pool'
       },
       {
-        iconName: 'bed',
+        iconName: 'chef-hat',
         iconType: 'material-community',
         title: 'Kitchen Utility'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'wifi',
+        iconType: 'font-awesome-5',
         title: 'WiFi'
       },
       {
-        iconName: 'bed',
+        iconName: 'shield-home',
         iconType: 'material-community',
         title: '24/7 Security'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'car',
+        iconType: 'font-awesome-5',
         title: '2 Parking Space'
       }
     ],
@@ -111,23 +111,23 @@ const Apartments = [
         title: '3 Bathrooms'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'toilet',
+    iconType: 'font-awesome-5',
         title: '3 Toilets'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'car',
+        iconType: 'font-awesome-5',
         title: '1 Parking Space'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'dumbbell',
+        iconType: 'font-awesome-5',
         title: 'Gym'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'swimming-pool',
+        iconType: 'font-awesome-5',
         title: 'Swimming Pool'
       }
     ],
@@ -156,23 +156,23 @@ const Apartments = [
         title: '3 Bathrooms'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'toilet',
+    iconType: 'font-awesome-5',
         title: '3 Toilets'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'car',
+        iconType: 'font-awesome-5',
         title: '1 Parking Space'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'dumbbell',
+        iconType: 'font-awesome-5',
         title: 'Gym'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'swimming-pool',
+        iconType: 'font-awesome-5',
         title: 'Swimming Pool'
       }
     ],
@@ -201,33 +201,33 @@ const Apartments = [
       title: '1 Bathrooms'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'toilet',
+    iconType: 'font-awesome-5',
         title: '1 Toilets'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'car',
+        iconType: 'font-awesome-5',
         title: '1 Parking Space'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'dumbbell',
+        iconType: 'font-awesome-5',
         title: 'Gym'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'swimming-pool',
+        iconType: 'font-awesome-5',
         title: 'Swimming Pool'
       },
       {
-        iconName: 'bed',
+        iconName: 'cctv',
         iconType: 'material-community',
         title: 'CCTV Camera'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'wifi',
+        iconType: 'font-awesome-5',
         title: 'WiFi'
       }
     ],
@@ -256,33 +256,33 @@ const Apartments = [
         title: '1 Bathrooms'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'toilet',
+    iconType: 'font-awesome-5',
         title: '1 Toilets'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'car',
+        iconType: 'font-awesome-5',
         title: '1 Parking Space'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'dumbbell',
+        iconType: 'font-awesome-5',
         title: 'Gym'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'swimming-pool',
+        iconType: 'font-awesome-5',
         title: 'Swimming Pool'
       },
       {
-        iconName: 'bed',
+        iconName: 'cctv',
         iconType: 'material-community',
         title: 'CCTV Camera'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'wifi',
+        iconType: 'font-awesome-5',
         title: 'WiFi'
       }
     ],
@@ -306,8 +306,8 @@ const Apartments = [
         title: '1 Bedrooms'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'toilet',
+    iconType: 'font-awesome-5',
         title: '1 Toilets'
       },
       {
@@ -316,28 +316,28 @@ const Apartments = [
         title: '1 Bathrooms'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'car',
+        iconType: 'font-awesome-5',
         title: '1 Parking Space'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'dumbbell',
+        iconType: 'font-awesome-5',
         title: 'Gym'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'swimming-pool',
+        iconType: 'font-awesome-5',
         title: 'Swimming Pool'
       },
       {
-        iconName: 'bed',
+        iconName: 'cctv',
         iconType: 'material-community',
         title: 'CCTV Camera'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'wifi',
+        iconType: 'font-awesome-5',
         title: 'WiFi'
       }
     ],
