@@ -3,7 +3,7 @@ import React from 'react'
 import { Icon } from '@rneui/themed'
 import tw from 'twrnc'
 import { useDispatch, useSelector } from 'react-redux'
-import { setFavorites } from '../store/slices/luxurious'
+import { setFavorites, setPurpleHeart } from '../store/slices/luxurious'
 
 const BestOffers = ( { navigation }) => {
   const { apartments } = useSelector(state => state.luxurious)
@@ -11,11 +11,12 @@ const BestOffers = ( { navigation }) => {
     navigation.navigate('ReviewScreen', item)
   }
   const dispatch = useDispatch()
-  const isFavorite = ({ name, id }) => {
-    dispatch(setFavorites({
-      name,
-      id
-    }))
+  const getPurpleHeart = (item) => {
+    dispatch(setPurpleHeart(item))
+  }
+  const isFavorite = (item) => {
+    dispatch(setFavorites(item))
+    getPurpleHeart(item)
   }
   return (
     <View style={tw`my-4`}>

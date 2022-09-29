@@ -377,21 +377,18 @@ export const luxuriousSlice = createSlice({
   },
   reducers: {
     setFavorites: (state, action) => {
-      const favorites = state.favorites
+      const favorites = state.favorites.filter(fav => fav.id === action.payload.id)
       if (favorites.length <= 0) {
-        favorites.push(action.payload)
+        state.favorites = [...state.favorites, action.payload]
+      } else {
+        state.favorites = state.favorites
       }
-      if (favorites.length > 0) {
-        favorites.map(fav => {
-          if (fav.id != action.payload.id) {
-            favorites.push(action.payload)
-          }
-        })
-      }
-      console.log(favorites)
+    },
+    setPurpleHeart: (state, action) => {
+      console.log('Hello Form Purple Heart')
     }
   }
 });
 
-export const { setFavorites } = luxuriousSlice.actions
+export const { setFavorites, setPurpleHeart } = luxuriousSlice.actions
 export default luxuriousSlice.reducer;

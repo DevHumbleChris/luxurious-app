@@ -4,17 +4,15 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import tw from "twrnc";
 import { Icon } from "@rneui/base";
 import NoFavorites from "../components/NoFavorites";
+import { useSelector } from "react-redux";
+import Favorites from "../components/Favorites";
 
 const Saved = () => {
+  const favorites = useSelector((state) => state.luxurious.favorites);
   return (
     <SafeAreaView style={tw`flex-1 p-5`}>
-      <View style={tw`flex-row items-center`}>
-        <TouchableOpacity style={tw`bg-white rounded-full`}>
-          <Icon name="chevron-left" type="material-community" color="#673ab7" size={35} />
-        </TouchableOpacity>
-        <Text style={tw`mx-auto text-lg text-gray-600`}>Favorites</Text>
-      </View>
-      <NoFavorites />
+      <Text style={tw`mx-auto text-xl text-gray-600 mb-3`}>Favorites</Text>
+      {favorites ? <Favorites /> : <NoFavorites />}
     </SafeAreaView>
   );
 };
