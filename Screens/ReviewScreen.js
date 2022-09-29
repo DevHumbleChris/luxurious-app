@@ -8,7 +8,7 @@ const ReviewScreen = ({ navigation, route: { params } }) => {
   return (
     <View style={tw`flex-1`}>
       <View style={tw`h-98`}>
-        <View style={tw`flex-1`}>
+        <View style={tw`relative`}>
           <Image
             style={{
               width: "100%",
@@ -19,6 +19,9 @@ const ReviewScreen = ({ navigation, route: { params } }) => {
               uri: params.image,
             }}
           />
+          <TouchableOpacity style={tw`bg-white rounded-full p-1 absolute top-12 left-2`} onPress={() => navigation.goBack()}>
+          <Icon name="chevron-left" type="material-community" color="#673ab7" size={30} />
+        </TouchableOpacity>
         </View>
       </View>
       <ScrollView

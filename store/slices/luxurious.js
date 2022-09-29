@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const Apartments = [
   {
+    id: 'b0dcf0a3-f19b-4566-a3b1-1c5aa4cafe3a',
     name: "Guitart Rosa",
     phoneNumber: "0726167090",
     location: "Nyali, Mombasa",
@@ -36,6 +37,7 @@ const Apartments = [
     type: 'Apartments'
   },
   {
+    id: 'aed6e7e3-be74-4fe2-b26f-5a8170b86e5c',
     name: "Demidoff Milano",
     phoneNumber: "0703846197",
     location: "Nyali, Mombasa",
@@ -90,6 +92,7 @@ const Apartments = [
     type: 'Apartments'
   },
   {
+    id: '58a68cfd-ffbf-406a-9c3c-b9bee4f76d46',
     name: "La Molina Aparthotels",
     phoneNumber: "0703846197",
     location: "Nyali, Mombasa",
@@ -135,6 +138,7 @@ const Apartments = [
     type: 'Apartments'
   },
   {
+    id: '872fdcf0-e75c-41a4-a9c6-ecca8fb72473',
     name: "Bernina Apartments",
     phoneNumber: "+254722517926",
     location: "Westlands, Nairobi",
@@ -180,6 +184,7 @@ const Apartments = [
     type: 'Apartments'
   },
   {
+    id: '0358eba6-75d0-48d4-8fb6-c24b38510af2',
     name: "Milano Apartments",
     phoneNumber: "+254722517926",
     location: "Kilimani, Nairobi",
@@ -235,6 +240,7 @@ const Apartments = [
     type: 'Apartments'
   },
   {
+    id: 'c85a1574-af17-4b17-a397-12503e6f51f4',
     name: "Roca Apartments",
     phoneNumber: "+254722517926",
     location: "Parklands, Nairobi",
@@ -290,6 +296,7 @@ const Apartments = [
     type: 'Apartments'
   },
   {
+    id: 'afe0d1be-080c-47e3-a952-bb18bda9e1e0',
     name: "City Apartments",
     phoneNumber: "+254722517926",
     location: "Lavington, Nairobi",
@@ -366,7 +373,14 @@ export const luxuriousSlice = createSlice({
   name: "luxuriousSlice",
   initialState: {
     apartments: Apartments,
+    favorites: []
   },
+  reducers: {
+    setFavorites: (state, action) => {
+      console.log(action.payload)
+    }
+  }
 });
 
+export const { setFavorites } = luxuriousSlice.actions
 export default luxuriousSlice.reducer;

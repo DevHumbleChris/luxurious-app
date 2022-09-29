@@ -2,12 +2,20 @@ import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import { Icon } from '@rneui/themed'
 import tw from 'twrnc'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { setFavorites } from '../store/slices/luxurious'
 
 const BestOffers = ( { navigation }) => {
   const { apartments } = useSelector(state => state.luxurious)
   const reviewItem = (item) => {
     navigation.navigate('ReviewScreen', item)
+  }
+  const dispatch = useDispatch()
+  const isFavorite = ({ name, id }) => {
+    dispatch(setFavorites({
+      name,
+      id
+    }))
   }
   return (
     <View style={tw`my-4`}>
@@ -17,8 +25,8 @@ const BestOffers = ( { navigation }) => {
         </View>
         {/* Apartments */}
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={tw`my-2 flex-row`}>
-          {apartments.map((item, i) => (
-            <View key={i} style={tw`w-60 bg-white rounded-2xl shadow p-1 mr-3 my-2`}>
+          {apartments.map((item) => (
+            <View key={item.id} style={tw`w-60 bg-white rounded-2xl shadow p-1 mr-3 my-2`}>
               <TouchableOpacity onPress={() => reviewItem(item)}>
               <Image
                 style={{
@@ -43,7 +51,7 @@ const BestOffers = ( { navigation }) => {
               </View>
               <TouchableOpacity
                 style={tw`flex-row justify-between items-center absolute top-3 right-3`}
-                onPress={() => console.log('Hello From heart')}
+                onPress={() => isFavorite(item)}
               >
                 <Icon
                   name="cards-heart-outline"
