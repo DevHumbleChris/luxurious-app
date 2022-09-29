@@ -12,7 +12,7 @@ const Saved = () => {
   return (
     <SafeAreaView style={tw`flex-1 p-5`}>
       <Text style={tw`mx-auto text-xl text-gray-600 mb-3`}>Favorites</Text>
-      {favorites ? <Favorites /> : <NoFavorites />}
+      {favorites.length > 0 ? <Favorites /> : <NoFavorites />}
     </SafeAreaView>
   );
 };

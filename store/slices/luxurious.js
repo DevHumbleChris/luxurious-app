@@ -383,12 +383,9 @@ export const luxuriousSlice = createSlice({
       } else {
         state.favorites = state.favorites
       }
-    },
-    setPurpleHeart: (state, action) => {
-      console.log('Hello Form Purple Heart')
     }
   }
 });
 
-export const { setFavorites, setPurpleHeart } = luxuriousSlice.actions
+export const { setFavorites } = luxuriousSlice.actions
 export default luxuriousSlice.reducer;

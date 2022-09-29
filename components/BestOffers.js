@@ -6,17 +6,13 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setFavorites, setPurpleHeart } from '../store/slices/luxurious'
 
 const BestOffers = ( { navigation }) => {
-  const { apartments } = useSelector(state => state.luxurious)
+  const { apartments, favorites } = useSelector(state => state.luxurious)
   const reviewItem = (item) => {
     navigation.navigate('ReviewScreen', item)
   }
   const dispatch = useDispatch()
-  const getPurpleHeart = (item) => {
-    dispatch(setPurpleHeart(item))
-  }
   const isFavorite = (item) => {
     dispatch(setFavorites(item))
-    getPurpleHeart(item)
   }
   return (
     <View style={tw`my-4`}>

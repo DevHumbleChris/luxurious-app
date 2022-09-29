@@ -30,7 +30,7 @@ export default function BottomNavigation({ navigation }) {
           </TouchableOpacity>
           {favorites.length > 0 && nav.name === "Favorites" && (
             <Text
-              style={tw`absolute right-0 bg-red-600 text-white rounded-full px-2 right-1 text-sm -top-2`}
+              style={tw`absolute right-0 bg-red-600 text-white rounded-full px-2 -right-1 text-sm -top-2`}
             >
               { favorites.length}
             </Text>
