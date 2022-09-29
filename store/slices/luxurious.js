@@ -18,8 +18,8 @@ const Apartments = [
         title: '2 Bedrooms'
     },
     {
-      iconName: 'bed',
-      iconType: 'material-community',
+      iconName: 'bath',
+      iconType: 'font-awesome-5',
       title: '2 Bathrooms'
   },
   {
@@ -51,8 +51,8 @@ const Apartments = [
         title: '4 Bedrooms'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'bath',
+      iconType: 'font-awesome-5',
         title: '4 Bathrooms'
       },
       {
@@ -106,8 +106,8 @@ const Apartments = [
         title: '3 Bedrooms'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'bath',
+      iconType: 'font-awesome-5',
         title: '3 Bathrooms'
       },
       {
@@ -135,7 +135,7 @@ const Apartments = [
     type: 'Apartments'
   },
   {
-    name: "Milano Apartments",
+    name: "Bernina Apartments",
     phoneNumber: "+254722517926",
     location: "Westlands, Nairobi",
     description:
@@ -151,8 +151,8 @@ const Apartments = [
         title: '3 Bedrooms'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'bath',
+      iconType: 'font-awesome-5',
         title: '3 Bathrooms'
       },
       {
@@ -191,56 +191,51 @@ const Apartments = [
     price: "KSh 200,000",
     amenities: [
       {
-        name: 'bed',
-        type: 'material-community',
-        amenity: '1 Bedrooms'
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Bedrooms'
       },
       {
-        name: 'bed',
-        type: 'material-community',
-        amenity: '1 Bathrooms'
+        iconName: 'bath',
+      iconType: 'font-awesome-5',
+      title: '1 Bathrooms'
       },
       {
-        name: 'bed',
-        type: 'material-community',
-        amenity: '1 Toilets'
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Toilets'
       },
       {
-        name: 'bed',
-        type: 'material-community',
-        amenity: '1 Parking Space'
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: '1 Parking Space'
       },
       {
-        name: 'bed',
-        type: 'material-community',
-        amenity: 'Gym'
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Gym'
       },
       {
-        name: 'bed',
-        type: 'material-community',
-        amenity: 'Swimming Pool'
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'Swimming Pool'
       },
       {
-        name: 'bed',
-        type: 'material-community',
-        amenity: 'CCTV Camera'
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'CCTV Camera'
       },
       {
-        name: 'bed',
-        type: 'material-community',
-        amenity: 'WiFi'
-      },
-      {
-        name: 'bed',
-        type: 'material-community',
-        amenity: 'WiFi'
+        iconName: 'bed',
+        iconType: 'material-community',
+        title: 'WiFi'
       }
     ],
     duration: "per month",
     type: 'Apartments'
   },
   {
-    name: "Milano Apartments",
+    name: "Roca Apartments",
     phoneNumber: "+254722517926",
     location: "Parklands, Nairobi",
     description:
@@ -256,8 +251,8 @@ const Apartments = [
         title: '1 Bedrooms'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'bath',
+      iconType: 'font-awesome-5',
         title: '1 Bathrooms'
       },
       {
@@ -295,7 +290,7 @@ const Apartments = [
     type: 'Apartments'
   },
   {
-    name: "Milano Apartments",
+    name: "City Apartments",
     phoneNumber: "+254722517926",
     location: "Lavington, Nairobi",
     description:
@@ -316,8 +311,8 @@ const Apartments = [
         title: '1 Toilets'
       },
       {
-        iconName: 'bed',
-        iconType: 'material-community',
+        iconName: 'bath',
+      iconType: 'font-awesome-5',
         title: '1 Bathrooms'
       },
       {
