@@ -22,6 +22,9 @@ const ReviewScreen = ({ navigation, route: { params } }) => {
           <TouchableOpacity style={tw`bg-white rounded-full p-1 absolute top-12 left-2`} onPress={() => navigation.goBack()}>
           <Icon name="chevron-left" type="material-community" color="#673ab7" size={30} />
         </TouchableOpacity>
+        <TouchableOpacity style={tw`bg-white rounded-full p-1 absolute top-12 right-2`}>
+          <Icon name="cards-heart-outline" type="material-community" color="#673ab7" size={30} />
+        </TouchableOpacity>
         </View>
       </View>
       <ScrollView

@@ -377,7 +377,18 @@ export const luxuriousSlice = createSlice({
   },
   reducers: {
     setFavorites: (state, action) => {
-      console.log(action.payload)
+      const favorites = state.favorites
+      if (favorites.length <= 0) {
+        favorites.push(action.payload)
+      }
+      if (favorites.length > 0) {
+        favorites.map(fav => {
+          if (fav.id != action.payload.id) {
+            favorites.push(action.payload)
+          }
+        })
+      }
+      console.log(favorites)
     }
   }
 });
